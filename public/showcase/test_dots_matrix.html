@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar-SA" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&family=Tajawal:wght@700;800;900&family=Almarai:wght@700;800&family=El+Messiri:wght@700&family=Reem+Kufi:wght@700&family=Amiri:wght@700&family=IBM+Plex+Sans+Arabic:wght@700&family=Alexandria:wght@800&display=swap" rel="stylesheet">
+<style>
+  body { background: #0F172A; color: white; padding: 30px; font-size: 24px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 1px solid #334155; padding: 12px; text-align: center; }
+  th { background: #1E293B; color: #38BDF8; font-size: 16px; }
+  .dots-test { font-size: 36px; }
+  .m { color: #F59E0B; }
+  .x { color: #38BDF8; }
+</style>
+</head>
+<body>
+  <h2>اختبار نقاط الياء (ي) في الكلمة «مثالي إكس»</h2>
+  <table>
+    <tr>
+      <th>الخط</th>
+      <th>1. قياسي (\u064a) مع lang="ar"</th>
+      <th>2. قياسي مع lang="ar-SA"</th>
+      <th>3. مع FEF2 (\uFEF2)</th>
+      <th>4. مع نقطتين صريحتين تحت الياء (CSS/SVG)</th>
+    </tr>
+    <script>
+      const fonts = [
+        'Cairo',
+        'Tajawal',
+        'Almarai',
+        'El Messiri',
+        'Reem Kufi',
+        'Amiri',
+        'IBM Plex Sans Arabic',
+        'Alexandria'
+      ];
+      for (const f of fonts) {
+        document.write(`
+          <tr>
+            <td style="font-size: 16px; color: #94A3B8; text-align: start;">${f}</td>
+            <td style="font-family: '${f}', sans-serif;" lang="ar">
+              <span class="m">مثالي</span> <span class="x">إكس</span>
+            </td>
+            <td style="font-family: '${f}', sans-serif;" lang="ar-SA">
+              <span class="m">مثالي</span> <span class="x">إكس</span>
+            </td>
+            <td style="font-family: '${f}', sans-serif;">
+              <span class="m">مثال\uFEF2</span> <span class="x">إكس</span>
+            </td>
+            <td style="font-family: '${f}', sans-serif;">
+              <span class="m" style="position: relative; display: inline-block;">
+                مثالى
+                <span style="position: absolute; bottom: -4px; right: 8px; display: inline-flex; gap: 3px;">
+                  <span style="width: 5px; height: 5px; background: #EA580C; border-radius: 50%;"></span>
+                  <span style="width: 5px; height: 5px; background: #F59E0B; border-radius: 50%;"></span>
+                </span>
+              </span>
+              <span class="x">إكس</span>
+            </td>
+          </tr>
+        `);
+      }
+    </script>
+  </table>
+</body>
+</html>

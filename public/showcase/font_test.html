@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600;700&family=Aref+Ruqaa:wght@700&family=El+Messiri:wght@700;800&family=Tajawal:wght@800;900&family=Alexandria:wght@800;900&display=swap" rel="stylesheet">
+<style>
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  @keyframes logoAura {
+    0%, 100% { filter: drop-shadow(0 0 14px rgba(220, 38, 38, 0.35)) drop-shadow(0 0 26px rgba(37, 99, 235, 0.25)); }
+    50% { filter: drop-shadow(0 0 22px rgba(245, 158, 11, 0.5)) drop-shadow(0 0 35px rgba(99, 102, 241, 0.35)); }
+  }
+  @keyframes beamGlance {
+    0%, 100% { opacity: 0.3; transform: translateX(-30%); }
+    50% { opacity: 0.8; transform: translateX(30%); }
+  }
+  body {
+    background: radial-gradient(circle at 50% 0%, #111B33 0%, #060B18 70%);
+    color: white;
+    padding: 40px;
+    font-family: sans-serif;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .flare {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(45,212,191,0.8), transparent);
+    box-shadow: 0 0 25px rgba(45,212,191,0.5);
+    animation: beamGlance 8s infinite ease-in-out;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: 18px 28px;
+    background: rgba(22, 32, 50, 0.7);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .row:hover {
+    transform: translateY(-4px) scale(1.01);
+    border-color: rgba(99, 102, 241, 0.45);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.5), 0 0 25px rgba(99, 102, 241, 0.2);
+  }
+  .label { font-size: 15px; color: #94A3B8; min-width: 200px; font-weight: 600; }
+  .logo { display: flex; align-items: center; gap: 15px; }
+  .logo img { height: 40px; animation: logoAura 5s infinite ease-in-out; }
+  .divider { width: 2px; height: 28px; background: linear-gradient(to bottom, #DC2626, #F59E0B, #2563EB); opacity: 0.6; box-shadow: 0 0 8px rgba(245,158,11,0.5); }
+  .word-m {
+    background: linear-gradient(135deg, #DC2626 0%, #EA580C 35%, #F59E0B 75%, #FBBF24 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 28px;
+    filter: drop-shadow(0 0 12px rgba(220, 38, 38, 0.35));
+  }
+  .word-x {
+    background: linear-gradient(135deg, #2563EB 0%, #4F46E5 30%, #06B6D4 70%, #00E5BE 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+    animation-delay: 1.5s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 28px;
+    filter: drop-shadow(0 0 14px rgba(37, 99, 235, 0.4));
+  }
+  .sub { font-size: 11px; color: #94A3B8; font-weight: 700; display: block; margin-top: 3px; letter-spacing: 0.5px; }
+</style>
+</head>
+<body>
+  <div class="flare"></div>
+  <div class="row" style="border-color: rgba(99,102,241,0.5); background: rgba(30, 41, 69, 0.8);">
+    <div class="label" style="color: #38BDF8;">★ المعتمد: Reem Kufi (كوفي انسيابي ملكي)</div>
+    <div class="logo">
+      <img src="/logo-transparent.png">
+      <div class="divider"></div>
+      <div>
+        <span class="word-m" style="font-family: 'Reem Kufi', sans-serif;">مثالي</span>
+        <span class="word-x" style="font-family: 'Reem Kufi', sans-serif;">إكس</span>
+        <span class="sub" style="font-family: 'Tajawal', sans-serif;">للبرمجيات والحلول الرقمية</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="label">1. Aref Ruqaa (رقعة متعرج أصيل)</div>
+    <div class="logo">
+      <img src="/logo-transparent.png">
+      <div class="divider"></div>
+      <div>
+        <span class="word-m" style="font-family: 'Aref Ruqaa', cursive;">مثالي</span>
+        <span class="word-x" style="font-family: 'Aref Ruqaa', cursive;">إكس</span>
+        <span class="sub" style="font-family: 'Tajawal', sans-serif;">للبرمجيات والحلول الرقمية</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="label">2. El Messiri (متعرج انسيابي فخم)</div>
+    <div class="logo">
+      <img src="/logo-transparent.png">
+      <div class="divider"></div>
+      <div>
+        <span class="word-m" style="font-family: 'El Messiri', sans-serif;">مثالي</span>
+        <span class="word-x" style="font-family: 'El Messiri', sans-serif;">إكس</span>
+        <span class="sub" style="font-family: 'Tajawal', sans-serif;">للبرمجيات والحلول الرقمية</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="label">3. Tajawal (انسيابي ناعم وعصري)</div>
+    <div class="logo">
+      <img src="/logo-transparent.png">
+      <div class="divider"></div>
+      <div>
+        <span class="word-m" style="font-family: 'Tajawal', sans-serif; font-weight: 900;">مثالي</span>
+        <span class="word-x" style="font-family: 'Tajawal', sans-serif; font-weight: 900;">إكس</span>
+        <span class="sub" style="font-family: 'Tajawal', sans-serif;">للبرمجيات والحلول الرقمية</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="label">4. Alexandria (تقني حاد وعصري)</div>
+    <div class="logo">
+      <img src="/logo-transparent.png">
+      <div class="divider"></div>
+      <div>
+        <span class="word-m" style="font-family: 'Alexandria', sans-serif; font-weight: 900;">مثالي</span>
+        <span class="word-x" style="font-family: 'Alexandria', sans-serif; font-weight: 900;">إكس</span>
+        <span class="sub" style="font-family: 'Alexandria', sans-serif;">للبرمجيات والحلول الرقمية</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

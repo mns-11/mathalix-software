@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar-SA" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Logo Font Comparisons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&family=El+Messiri:wght@600;700&family=Almarai:wght@700;800&family=Reem+Kufi:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0B1020;
+    color: #F8FAFC;
+    font-family: 'Tajawal', system-ui, sans-serif;
+    padding: 30px;
+  }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #38BDF8;
+  }
+  .preview-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .preview-box {
+    background: #0F172A;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 20px;
+  }
+  .title-tag {
+    font-size: 14px;
+    color: #94A3B8;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+  .title-tag span.badge {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38BDF8;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+  }
+
+  /* Mock Navbar */
+  .navbar-mock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .navbar-light {
+    background: #FFFFFF;
+    color: #0F172A;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+  }
+  .navbar-dark {
+    background: rgba(15, 23, 42, 0.95);
+    color: #FFFFFF;
+  }
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .navbar-light .nav-links { color: #334155; }
+  .navbar-dark .nav-links { color: #94A3B8; }
+
+  /* Logo Component */
+  .logo-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+  }
+  .logo-emblem {
+    height: 38px;
+    display: flex;
+    align-items: center;
+  }
+  .logo-emblem img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+  .logo-divider {
+    width: 2px;
+    height: 24px;
+    background: linear-gradient(to bottom, #DC2626 0%, #F59E0B 50%, #2563EB 100%);
+    opacity: 0.4;
+    border-radius: 999px;
+  }
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+    text-align: start;
+    font-feature-settings: "locl" 1;
+    -webkit-font-feature-settings: "locl" 1;
+  }
+  .brand-title {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    font-size: 1.7rem;
+  }
+  .w-mathali {
+    background: linear-gradient(135deg, #DC2626 0%, #EA580C 50%, #F59E0B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  .w-x {
+    background: linear-gradient(135deg, #2563EB 0%, #4F46E5 40%, #06B6D4 75%, #00E5BE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  .tagline {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-top: 0.1rem;
+    letter-spacing: 0.03em;
+  }
+  .navbar-light .tagline { color: #64748B; }
+  .navbar-dark .tagline { color: #94A3B8; }
+</style>
+</head>
+<body>
+  <h1>معاينة الشعار في النافبار بالخيارات الأنسب (مع نقاط الياء ي الصريحة)</h1>
+
+  <div class="preview-section">
+    <!-- Option A: Tajawal -->
+    <div class="preview-box">
+      <div class="title-tag">
+        <span>الخيار أ: خط «تجوال Tajawal 900» — انسيابي عصري تقني متوازن مع نقاط ياء واضحة تماماً</span>
+        <span class="badge">الأكثر توافقاً وتوازناً</span>
+      </div>
+      <!-- Light Mode -->
+      <div class="navbar-mock navbar-light" style="margin-bottom: 12px;">
+        <div class="logo-wrap" lang="ar-SA">
+          <div class="logo-emblem"><img src="/logo-transparent.png" alt="SMX"></div>
+          <div class="logo-divider"></div>
+          <div class="logo-text">
+            <div class="brand-title" style="font-family: 'Tajawal', sans-serif; font-weight: 900;">
+              <span class="w-mathali">مثالي</span>
+              <span class="w-x">إكس</span>
+            </div>
+            <span class="tagline">للبرمجيات والحلول الرقمية</span>
+          </div>
+        </div>
+        <div class="nav-links">
+          <span>الرئيسية</span>
+          <span>من نحن</span>
+          <span>أعمالنا</span>
+          <span>تواصل معنا</span>
+        </div>
+      </div>
+      <!-- Dark Mode -->
+      <div class="navbar-mock navbar-dark">
+        <div class="logo-wrap" lang="ar-SA">
+          <div class="logo-emblem"><img src="/logo-transparent.png" alt="SMX"></div>
+          <div class="logo-divider"></div>
+          <div class="logo-text">
+            <div class="brand-title" style="font-family: 'Tajawal', sans-serif; font-weight: 900;">
+              <span class="w-mathali">مثالي</span>
+              <span class="w-x">إكس</span>
+            </div>
+            <span class="tagline">للبرمجيات والحلول الرقمية</span>
+          </div>
+        </div>
+        <div class="nav-links">
+          <span>الرئيسية</span>
+          <span>من نحن</span>
+          <span>أعمالنا</span>
+          <span>تواصل معنا</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option B: El Messiri -->
+    <div class="preview-box">
+      <div class="title-tag">
+        <span>الخيار ب: خط «المسيري El Messiri 700» — متعرج انسيابي فاخر (يلبي طلب "بخط متعرج جميل")</span>
+        <span class="badge">متعرج وانسيابي أنيق</span>
+      </div>
+      <!-- Light Mode -->
+      <div class="navbar-mock navbar-light" style="margin-bottom: 12px;">
+        <div class="logo-wrap" lang="ar-SA">
+          <div class="logo-emblem"><img src="/logo-transparent.png" alt="SMX"></div>
+          <div class="logo-divider"></div>
+          <div class="logo-text">
+            <div class="brand-title" style="font-family: 'El Messiri', sans-serif; font-weight: 700;">
+              <span class="w-mathali">مثالي</span>
+              <span class="w-x">إكس</span>
+            </div>
+            <span class="tagline">للبرمجيات والحلول الرقمية</span>
+          </div>
+        </div>
+        <div class="nav-links">
+          <span>الرئيسية</span>
+          <span>من نحن</span>
+          <span>أعمالنا</span>
+          <span>تواصل معنا</span>
+        </div>
+      </div>
+      <!-- Dark Mode -->
+      <div class="navbar-mock navbar-dark">
+        <div class="logo-wrap" lang="ar-SA">
+          <div class="logo-emblem"><img src="/logo-transparent.png" alt="SMX"></div>
+          <div class="logo-divider"></div>
+          <div class="logo-text">
+            <div class="brand-title" style="font-family: 'El Messiri', sans-serif; font-weight: 700;">
+              <span class="w-mathali">مثالي</span>
+              <span class="w-x">إكس</span>
+            </div>
+            <span class="tagline">للبرمجيات والحلول الرقمية</span>
+          </div>
+        </div>
+        <div class="nav-links">
+          <span>الرئيسية</span>
+          <span>من نحن</span>
+          <span>أعمالنا</span>
+          <span>تواصل معنا</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option C: Almarai -->
+    <div class="preview-box">
+      <div class="title-tag">
+        <span>الخيار ج: خط «المراعي Almarai 800» — فخم ورصين جداً يحاكي أرقى الشركات التقنية</span>
+        <span class="badge">مؤسسي عالمي</span>
+      </div>
+      <!-- Light Mode -->
+      <div class="navbar-mock navbar-light" style="margin-bottom: 12px;">
+        <div class="logo-wrap" lang="ar-SA">
+          <div class="logo-emblem"><img src="/logo-transparent.png" alt="SMX"></div>
+          <div class="logo-divider"></div>
+          <div class="logo-text">
+            <div class="brand-title" style="font-family: 'Almarai', sans-serif; font-weight: 800;">
+              <span class="w-mathali">مثالي</span>
+              <span class="w-x">إكس</span>
+            </div>
+            <span class="tagline">للبرمجيات والحلول الرقمية</span>
+          </div>
+        </div>
+        <div class="nav-links">
+          <span>الرئيسية</span>
+          <span>من نحن</span>
+          <span>أعمالنا</span>
+          <span>تواصل معنا</span>
+        </div>
+      </div>
+      <!-- Dark Mode -->
+      <div class="navbar-mock navbar-dark">
+        <div class="logo-wrap" lang="ar-SA">
+          <div class="logo-emblem"><img src="/logo-transparent.png" alt="SMX"></div>
+          <div class="logo-divider"></div>
+          <div class="logo-text">
+            <div class="brand-title" style="font-family: 'Almarai', sans-serif; font-weight: 800;">
+              <span class="w-mathali">مثالي</span>
+              <span class="w-x">إكس</span>
+            </div>
+            <span class="tagline">للبرمجيات والحلول الرقمية</span>
+          </div>
+        </div>
+        <div class="nav-links">
+          <span>الرئيسية</span>
+          <span>من نحن</span>
+          <span>أعمالنا</span>
+          <span>تواصل معنا</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
